@@ -4,7 +4,7 @@ a really wonderful HAT needs a wonderful python script to enjoy its full potenti
 # Why?
 As it happens sometimes, I did not find what I wanted on the internet for this very nice HAT module from Waveshare.
 I tried the main.py script I found on waveshare website...
-What we can read in it is a - if elif elif .... - written on the wrong  inverted order that keeps the Fan at 40% what ever happens:
+What we can read in it is a - if elif elif .... - written on the wrong  inverted order that keeps the Fan at 20% what ever happens:
 
 ```
 if(temp > 30):
@@ -24,7 +24,7 @@ else:
 ```
 
    As the first condition if(temp > 30) should be always True on a Raspberry-pi system, it stops there. Typical mistake easy to fall in.
-   So, I wrote something that suits perfectly to my needs:
+   So, I wrote something that suits perfectly to my needs, starting with the script freely available on waveshare's wiki:
    - a first 100% speed fan test for 2 seconds
    - corresponding fan speed with CPU temperature
    - display on 1 single line, as this display is too small (for me) for showing 2 lines at the same time (as in scripts on waveshare's)
